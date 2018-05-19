@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="../lib/css/semantic.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="lib/css/style.css"> -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- <script src="../lib/js/semantic.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="emailUi.js"></script>
+
+</head>
+
+<body>
+  <form >
+    <div class="form-group" style="    padding: 10px 20px 0px;">
+      <label for="exampleFormControlTextarea1">Put Your Emails here...</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" style="background: aliceblue;"></textarea>
+      <div class="" style="padding: 10px;">
+
+        <button type="button" class="btn emailbtn btn-secondary btn-sm">Submit</button>
+      </div>
+    </div>
+
+
+  </form>
+  <div class="rows" style="display: flex;justify-content: space-evenly;">
+    <div class="col" >
+      <label for="">Match EmailAddress Records</label>
+
+      <table class="table  table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Email</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody id="emaildata">
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col" style="padding-left: 10px;">
+      <label for="">Unmatch Records</label>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody id='emailunmatchdata'>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+
+</html>

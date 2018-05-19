@@ -1,0 +1,27 @@
+{
+  "name": "emailidchecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "async-waterfall": "^0.1.5",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "isync": "^1.0.2",
+    "mongo-connect": "0.0.6",
+    "mongodb": "^3.1.0-beta4",
+    "multer": "^1.3.0",
+    "xls-to-json": "^0.5.0",
+    "xls-to-json-lc": "^0.3.4",
+    "xlsx-to-json": "^0.3.0",
+    "xlsx-to-json-lc": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
