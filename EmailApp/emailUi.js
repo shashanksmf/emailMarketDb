@@ -20,13 +20,14 @@ $( document ).ready(function() {
           var htmlStr ="";
           // console.log(successData);
           var data =successData.data.unmatcharr;
-          console.log("data==>",data);
-          data.forEach(unmatchdata=>{
-            htmlStr +='<tr>'+
-            '<td>'+unmatchdata+'</td>'+
-            '</tr>';
+         console.log("data==>",data);
+          data.forEach(unmatchdata =>{
+            htmlStr += unmatchdata + '\n';
+            // '<tr>'+
+            // '<td>'+unmatchdata+'</td>'+
+            // '</tr>';
           });
-          $('#emailunmatchdata').append(htmlStr);
+          $('#emailunmatchdata').html(htmlStr);
 
           renderTable(successData);
         },
