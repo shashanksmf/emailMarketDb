@@ -16,7 +16,7 @@ var url = "mongodb://admin:admin@ds229450.mlab.com:29450/heroku_njnj8d2d";
 var dbo;
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
-  dbo = db.db("mydb");
+  dbo = db.db("heroku_njnj8d2d");
 });
 
 
