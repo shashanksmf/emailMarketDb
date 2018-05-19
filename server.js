@@ -124,4 +124,4 @@ destination: function (req, file, cb) {
 
 
 app.use(express.static(path.join(__dirname, 'EmailApp')));
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port 3000!'))
